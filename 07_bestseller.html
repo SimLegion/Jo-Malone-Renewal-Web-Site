@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>베스트셀러 | 조 말론 런던</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="icon" href="img/header&footer/favicon.ico">
+    <!--백업 css-->
+    <link rel="stylesheet" href="css/backup_1.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        /*----------------- 페이지 내 스크롤 보정 -----------------*/
+function scrollWithOffset(event, id) {
+  event.preventDefault(); // 기본 앵커 이동 방지
+  const target = document.getElementById(id);
+  const offset = 100;
+
+  const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  window.scrollTo({ top: y, behavior: 'smooth' }); // 부드럽게 스크롤
+};
+        /*----------------- 외부 링크로 연결 시 위 함수 실행 -----------------*/
+document.addEventListener('DOMContentLoaded', function () {
+  const offset = 100;
+  const hash = window.location.hash;
+
+  if (hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+      // 약간의 딜레이를 주면 브라우저 기본 스크롤보다 우리가 원하는 스크롤이 우선 적용됨
+      setTimeout(() => {
+        const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: y, behavior: 'auto' });
+      }, 0); // 또는 50~100ms로 조정 가능
+    }
+  }
+});
+</script>
+    <style>
+/*    .cat_title .banner {width: 100%; height: 288px; background-image: url(img/); background-size: 1920px; background-position: center 0; background-repeat: no-repeat;}*/
+/*상단 배너, 2개 이상이면 태그에 bgi 속성만 부여*/
+    </style>
+</head>
+<body><div id="wrap">
+<div id="skipnav" class="hidden">
+<ul>
+    <li><a href="#header">헤더 바로가기</a></li>
+    <li><a href="#nav">네비게이션 바 바로가기</a></li>
+    <li><a href="#gnb">유틸리티 바로가기</a></li>
+    
+    <!--섹션-->
+    <li><a href="#colonge_bestseller">코롱 베스트셀러 바로가기</a></li>
+    <li><a href="#home_bestseller">홈 프레그런스 베스트셀러 바로가기</a></li>
+    <li><a href="#bath_bestseller">배스 앤 바디 베스트셀러 바로가기</a></li>
+    <li><a href="#underbanner">하단 배너 바로가기</a></li>
+    
+    <li><a href="#footer">푸터 바로가기</a></li>
+</ul>
+</div>
+<header id="header"></header>
+
+<section class="cat_page">
+<!--<article class="cat_title">
+<h3 class="best_title">베스트셀러</h3>
+<h6></h6>
+<div class="line"></div>
+</article>-->
+
+<article class="cat_title" id="colonge_bestseller">
+<h4>코롱 베스트셀러</h4>
+<h6>우리의 가장 사랑받는 코롱을 만나 보세요. 베스트셀러부터 신제품까지 다양한 조 말론 런던의 컬렉션이 있습니다.</h6>
+<div class="line"></div>
+</article>
+
+<article class="pdt">
+<ul class="pdt">
+<li><a href=""><img src="" alt="블랙베리 앤 베이 코롱"></a><p><span class="pdt_eng">Blackberry &amp; Bay Cologne</span><br><br><span>블랙베리 앤 베이 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 코롱"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Cologne</span><br><br><span>라임 바질 앤 만다린 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="잉글리쉬 페어 앤 프리지아 코롱"></a><p><span class="pdt_eng">English Pear &amp; Freesia Cologne</span><br><br><span>잉글리쉬 페어 앤 프리지아 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="피오니 앤 블러쉬 스웨이드 코롱"></a><p><span class="pdt_eng">Wood Sage &amp; Sea Salt Cologne</span><br><br><span>피오니 앤 블러쉬 스웨이드 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="우드 세이지 앤 씨 솔트 코롱"></a><p><span class="pdt_eng">Wood Sage &amp; Sea Salt Cologne</span><br><br><span>우드 세이지 앤 씨 솔트 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="허니서클 앤 다바나 코롱"></a><p><span class="pdt_eng">Honeysuckle &amp; Davana Cologne</span><br><br><span>허니서클 앤 다바나 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="미모사 앤 카다멈 코롱"></a><p><span class="pdt_eng">Mimosa &amp; Cardamom Cologne</span><br><br><span>미모사 앤 카다멈 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="레드 로즈 코롱"></a><p><span class="pdt_eng">Red Roses Cologne</span><br><br><span>레드 로즈 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="와일드 블루벨 코롱"></a><p><span class="pdt_eng">Wild Bluebell Cologne</span><br><br><span>와일드 블루벨 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="포피 앤 바알리 코롱"></a><p><span class="pdt_eng">Poppy &amp; Barley Cologne</span><br><br><span>포피 앤 바알리 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="그레이프프루트 코롱"></a><p><span class="pdt_eng">Grapefruit Cologne</span><br><br><span>그레이프프루트 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="포머그래니트 누와 코롱"></a><p><span class="pdt_eng">Pomegranate Noir Cologne</span><br><br><span>포머그래니트 누와 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="얼 그레이 앤 큐컴버 코롱"></a><p><span class="pdt_eng">Earl Grey &amp; Cucumber Cologne</span><br><br><span>얼 그레이 앤 큐컴버 코롱</span><br><br>₩235,000 / 100ml</p><a href=""></a></li>
+</ul>
+</article>
+
+<article class="cat_title" id="home_bestseller">
+<h4>홈 프레그런스 베스트셀러</h4>
+<h6>조 말론 런던 홈의 대표적인 제품을 통해 당신만의 향기로운 이야기를 채워보세요.</h6>
+<div class="line"></div>
+</article>
+<article class="pdt">
+<ul class="pdt">
+<li><a href=""><img src="" alt="피오니 앤 블러쉬 스웨이드 디퓨저"></a><p><span class="pdt_eng">Peony &amp; Blush Suede Diffuser 165ml</span><br><br><span>피오니 앤 블러쉬 스웨이드 디퓨저</span><br><br>₩151,000 / 165ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="잉글리쉬 페어 앤 프리지아 디퓨저"></a><p><span class="pdt_eng">English Pear &amp; Freesia Diffuser 165ml</span><br><br><span>잉글리쉬 페어 앤 프리지아 디퓨저</span><br><br>₩151,000 / 165ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="잉글리쉬 페어 앤 프리지아 룸 스프레이"></a><p><span class="pdt_eng">English Pear &amp; Freesia Room Spray</span><br><br><span>잉글리쉬 페어 앤 프리지아 룸 스프레이</span><br><br>₩89,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="잉글리쉬 페어 앤 프리지아 센트 투 고"></a><p><span class="pdt_eng">English Pear &amp; Freesia Scent To Go 20g</span><br><br><span>잉글리쉬 페어 앤 프리지아 센트 투 고</span><br><br>₩90,000 / 20g</p><a href=""></a></li>
+<li><a href=""><img src="" alt="카 디퓨저 하우스"></a><p><span class="pdt_eng">Car Diffuser House</span><br><br><span>카 디퓨저 하우스</span><br><br>₩88,000</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 룸 스프레이"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Room Spray</span><br><br><span>라임 바질 앤 만다린 룸 스프레이</span><br><br>₩89,000 / 100ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="문릿 캐모마일 필로우 미스트"></a><p><span class="pdt_eng">Moonlit Camomile Pillow Mist 50ml</span><br><br><span>문릿 캐모마일 필로우 미스트</span><br><br>₩69,000 / 50ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 센티드 캔들"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Scented Candle 200g</span><br><br><span>라임 바질 앤 만다린 센티드 캔들</span><br><br>₩112,000 / 200g</p><a href=""></a></li>
+<li><a href=""><img src="" alt="잉글리쉬 페어 앤 프리지아 센티드 캔들"></a><p><span class="pdt_eng">English Pear &amp; Freesia Scented Candle 600g</span><br><br><span>잉글리쉬 페어 앤 프리지아 센티드 캔들</span><br><br>₩313,000 / 600g</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 디퓨저"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Diffuser 165ml</span><br><br><span>라임 바질 앤 만다린 디퓨저</span><br><br>₩151,000 / 165ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="블랙베리 앤 베이 디퓨저"></a><p><span class="pdt_eng">Blackberry &amp; Bay Diffuser 165ml</span><br><br><span>블랙베리 앤 베이 디퓨저</span><br><br>₩151,000 / 165ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 카 디퓨저 리필"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Car Diffuser Refill</span><br><br><span>라임 바질 앤 만다린 카 디퓨저 리필</span><br><br>가격j / 48x48x10</p><a href=""></a></li>
+<li><a href=""><img src="" alt="레드 로즈 디퓨저"></a><p><span class="pdt_eng">Red Roses Diffuser 165ml</span><br><br><span>레드 로즈 디퓨저</span><br><br>₩151,000 / 165ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 센티드 캔들"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Scented Candle 600g</span><br><br><span>라임 바질 앤 만다린 센티드 캔들</span><br><br>₩313,000 / 600g</p><a href=""></a></li>
+<li><a href=""><img src="" alt="피오니 앤 블러쉬 스웨이드 센티드 캔들"></a><p><span class="pdt_eng">Peony &amp; Blush Suede Scented Candle 65G</span><br><br><span>피오니 앤 블러쉬 스웨이드 센티드 캔들</span><br><br>₩55,000 / 65G</p><a href=""></a></li>
+<li><a href=""><img src="" alt="우드 세이지 앤 씨 솔트 센티드 캔들"></a><p><span class="pdt_eng">Wood Sage &amp; Sea Salt Scented Candle 200g</span><br><br><span>우드 세이지 앤 씨 솔트 센티드 캔들</span><br><br>₩112,000 / 200g</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 센티드 캔들"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Scented Candle 65G</span><br><br><span>라임 바질 앤 만다린 센티드 캔들</span><br><br>₩55,000 / 65G</p><a href=""></a></li>
+<li><a href=""><img src="" alt="레드 로즈 클래식 캔들"></a><p><span class="pdt_eng">Red Roses Classic Candle 200g</span><br><br><span>레드 로즈 클래식 캔들</span><br><br>₩112,000 / 200g</p><a href=""></a></li>
+<li><a href=""><img src="" alt="블랙베리 앤 베이 센티드 캔들"></a><p><span class="pdt_eng">Blackberry &amp; Bay Scented Candle 200g</span><br><br><span>블랙베리 앤 베이 센티드 캔들</span><br><br>₩112,000 / 200g</p><a href=""></a></li>
+<li><a href=""><img src="" alt="피오니 앤 블러쉬 스웨이드 카 디퓨저 리필"></a><p><span class="pdt_eng">Peony &amp; Blush Suede Car Diffuser Refill</span><br><br><span>피오니 앤 블러쉬 스웨이드 카 디퓨저 리필</span><br><br>₩66,000 / 48x48x10</p><a href=""></a></li>
+</ul>
+</article>
+
+<article class="cat_title" id="bath_bestseller">
+<h4>배스 앤 바디 베스트셀러</h4>
+<h6>하루의 시작과 끝을 향기롭게 보내세요.</h6>
+<div class="line"></div>
+</article>
+
+<article class="pdt">
+<ul class="pdt">
+<li><a href=""><img src="" alt="피오니 앤 블러쉬 스웨이드 배스 오일"></a><p><span class="pdt_eng">Peony &amp; Blush Suede Bath Oil 250ml</span><br><br><span>피오니 앤 블러쉬 스웨이드 배스 오일</span><br><br>₩117,000 / 250ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 바디 앤 핸드 로션"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Body &amp; Hand Lotion 250ml</span><br><br><span>라임 바질 앤 만다린 바디 앤 핸드 로션</span><br><br>₩105,000 / 250ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="잉글리쉬 페어 앤 프리지아 바디 크림"></a><p><span class="pdt_eng">English Pear &amp; Freesia Body Creme 175ml</span><br><br><span>잉글리쉬 페어 앤 프리지아 바디 크림</span><br><br>₩142,000 / 175ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="미모사 앤 카다멈 바디 크림"></a><p><span class="pdt_eng">Mimosa &amp; Cardamom Body Creme 175ml</span><br><br><span>미모사 앤 카다멈 바디 크림</span><br><br>₩142,000 / 175ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="비타민 E 립 컨디셔너"></a><p><span class="pdt_eng">Vit E Lip Conditioner 15ml</span><br><br><span>비타민 E 립 컨디셔너</span><br><br>₩53,000 / 15ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="피오니 앤 블러쉬 스웨이드 바디 앤 핸드 워시"></a><p><span class="pdt_eng">Peony &amp; Blush Suede Body &amp; Hand Wash 250ml</span><br><br><span>피오니 앤 블러쉬 스웨이드 바디 앤 핸드 워시</span><br><br>₩78,000 / 250ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="잉글리쉬 페어 앤 프리지아 바디 앤 핸드 워시"></a><p><span class="pdt_eng">English Pear &amp; Freesia Body &amp; Hand Wash 250ml</span><br><br><span>잉글리쉬 페어 앤 프리지아 바디 앤 핸드 워시</span><br><br>₩78,000 / 250ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 바디 앤 핸드 워시"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Body &amp; Hand Wash 250ml</span><br><br><span>라임 바질 앤 만다린 바디 앤 핸드 워시</span><br><br>₩78,000 / 250ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 배스 오일"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Bath Oil 250ml</span><br><br><span>라임 바질 앤 만다린 배스 오일</span><br><br>₩117,000 / 250ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="라임 바질 앤 만다린 익스폴리에이팅 샤워 젤"></a><p><span class="pdt_eng">Lime Basil &amp; Mandarin Exfoliating Shower Gel 200ml</span><br><br><span>라임 바질 앤 만다린 익스폴리에이팅 샤워 젤</span><br><br>₩75,000 / 200ml</p><a href=""></a></li>
+<li><a href=""><img src="" alt="우드 세이지 앤 씨 솔트 바디 앤 핸드 워시"></a><p><span class="pdt_eng">Wood Sage &amp; Sea Salt Body &amp; Hand Wash 250ml</span><br><br><span>우드 세이지 앤 씨 솔트 바디 앤 핸드 워시</span><br><br>₩78,000 / 250ml</p><a href=""></a></li>
+</ul>
+</article>
+<!--<article class="box_banner pt50px">
+<div style="background-image: url(img/btn_more.svg);"></div>
+<div><h5><br><br><a href="">자세히 보기</a></p></div>
+
+</article>-->
+
+<article id="underbanner">
+<ul class="underbanner">
+    <li><a href="appointment.html">
+            <img src="img/06_appointments.jpg" alt="예약하기">
+            <h4>예약하기</h4>
+        </a></li>
+    <li><a href="mejang.html">
+            <img src="img/06_store.jpg" alt="매장안내">
+            <h4>매장안내</h4>
+        </a></li>
+    <li><a href="customer_support.html">
+            <img src="img/06_customer_service.jpg" alt="문의하기">
+            <h4>문의하기</h4>
+        </a></li>
+</ul>
+</article>
+</section>
+<footer id="footer"></footer>
+</div>
+<script src="js/banner_bot.js"></script>
+<script src="js/headerFooter.js"></script>
+<script src="js/btn_show.js"></script>
+<script src="js/auto_href.js"></script>
+<!--백업 js-->
+<script src="js/backup.js"></script>
+</body>
+</html>

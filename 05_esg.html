@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>ESG | 조 말론 런던</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--안태성님-->
+    <link rel="icon" href="img/header&footer/favicon.ico">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <style>
+    .cat_title .banner {width: 100%; height: 288px; background-image: url(img/01_banner-1.avif); background-size: 1920px; background-position: center 0; background-repeat: no-repeat;}
+/*상단 배너, 2개 이상이면 태그에 bgi 속성만 부여*/
+        body {background-color: #fcf9ee;}
+        #esg_title {margin-top: 150px;}
+        #esg_cat {overflow: hidden; width: 808px;}
+        #esg_cat div {width: 100%; position: relative;}
+        #esg_cat > div > * {position: absolute;}
+        #art1 {height: 260px;} #art1 .txt {left: calc(50% + 24px);} #art1 .img {width: 392px; height: 260px; background-image: url(img/05_img-1.avif);}
+        #art2 {height: 528px;} #art2 .txt {left: 104px; top: 100px;} #art2 .img {width: 392px; height: 588px; right: 0; bottom: 0; background-image: url(img/05_img-2.avif);}
+        #art3 {height: 392px; margin-top: 50px;} #art3 .txt {left: calc(50% + 24px);} #art3 .img {width: 392px; height: 392px; background-image: url(img/05_img-3.avif)} #art3 h5 {line-height: 1.5;}
+        .txt, .txt h6 {width: 288px; line-height: 1.5;}
+        h6 {margin-top: 20px;} h5, h6, p {text-align: left; color: #555} h5 {color: #000} .txt a {text-decoration: underline; color: #555;}
+        .img {background-color: #9d84e0;}
+/*        #art4 {height: 329px; margin-top: 100px; background-image: url(img/05_img-4.PNG); cursor: pointer;}*/
+    </style>
+</head>
+<body><div id="wrap">
+<div id="skipnav" class="hidden">
+<ul>
+    <li><a href="#header">헤더 바로가기</a></li>
+    <li><a href="#nav">네비게이션 바 바로가기</a></li>
+    <li><a href="#gnb">유틸리티 바로가기</a></li>
+    
+    <!--섹션-->
+    <li><a href="#best_seller">베스트 셀러 바로가기</a></li>
+    <li><a href="#gift">완벽한 선물 바로가기</a></li>
+    <li><a href="#colonge_all">전체보기 바로가기</a></li>
+    <li><a href="#cent">센트 레이어링 바로가기</a></li>
+    
+    <li><a href="#footer">푸터 바로가기</a></li>
+</ul>
+</div>
+<header id="header"></header>
+
+<section class="cat_page">
+<article class="cat_title">
+<h4 id="esg_title">친절함의 문화</h4>
+<h6>우리는 환경을 보호하고 지역사회의 안녕을 위해 책임을 져야 한다는 것을 알고 있습니다. 이를 위해<br>친절함은 우리가 하는 모든 일의 초석이 됩니다.</h6>
+<div class="line w600px" style="background-color: #555;"></div>
+</article>
+
+<article id="esg_cat" class="w808px">
+<div id="art1">
+    <div class="img"></div>
+    <div class="txt"><h5>우리의 자선활동 미션</h5><h6>우리는 편견과 낙인에 맞서는 정신건강 관련 프로젝트 그리고 영감을 주는 자선단체들을 지원하기 위해 최선을 다하고 있습니다.<br><br><a href="05a_esg.html">보러가기</a></h6></div>
+</div>
+<div id="art2">
+    <div class="img"></div>
+    <div class="txt"><h5>지속가능성을 위한 우리의 활동</h5><h6>자연은 영원히 조 말론 런던의 뮤즈로서, 보다 지속가능한 미래를 향해 나아가면서 환경 보호에 있어 의미있는 역할을 하고자 합니다.<br><br><a href="05b_esg.html">보러가기</a></h6></div>
+</div>
+<div id="art3">
+    <div class="img"></div>
+    <div class="txt"><h5>우리의 사람 &amp;<br>우리의 일터</h5><h6>자연은 영원히 조 말론 런던의 뮤즈로서, 보다 지속가능한 미래를 향해 나아가면서 환경 보호에 있어 의미있는 역할을 하고자 합니다.<br><br><a href="05c_esg.html">보러가기</a></h6></div>
+</div>
+<video autoplay muted loop controls style="width: 808px; margin-top: 50px;"><source src="video/esg.mp4" type="video/mp4"></video>
+</article>
+
+</section><footer id="footer"></footer></div>
+<!--스크립트-->
+<script src="js/headerFooter.js"></script>
+<script src="js/auto_href.js"></script>
+<script src="js/btn_show.js"></script>
+<script src="js/banner_bot.js"></script>
+<!--백업 js-->
+<script src="js/backup.js"></script>
+</body>
+</html>

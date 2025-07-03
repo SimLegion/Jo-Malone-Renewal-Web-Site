@@ -1,0 +1,279 @@
+/******** 리셋 ********/
+* {margin: 0; padding: 0; background-repeat: no-repeat;}
+ul > li {list-style: none;}
+a:any-link {text-decoration: none; color: #000;}
+img {vertical-align: top;}
+
+
+
+/******** skipnav ********/
+.hidden {position: absolute; left: -9999px;}
+
+
+
+/******** 목업 ********/
+/*body {background-image: url(../img/b.jpg); background-position: center 0; background-repeat: no-repeat;}*/
+/*#wrap {opacity: 0.5;}*/
+
+
+
+/******** 라이브러리 ********/
+
+/*** 숨김(영역차지) ***/
+/*.hide * {opacity: 0;}*/
+
+/*** 마진 (상) ***/
+.mt20px {margin-top: 20px;}
+.mt30px {margin-top: 30px;}
+.mt50px {margin-top: 50px;}
+.mt72px {margin-top: 72px;}
+.mt100px {margin-top: 100px;}
+.mt150px {margin-top: 150px;}
+.mt200px {margin-top: 200px;}
+.mt280px {margin-top: 280px;}
+
+/*** 마진 (하) ***/
+.mb0 {margin-bottom: 0;}
+.mb20px {margin-bottom: 20px;}
+.mb30px {margin-bottom: 30px;}
+.mb50px {margin-bottom: 50px;}
+.mb72px {margin-bottom: 72px;}
+.mb100px {margin-bottom: 100px;}
+.mb150px {margin-bottom: 150px;}
+.mb200px {margin-bottom: 200px;}
+.mb280px {margin-bottom: 280px;}
+
+/*** 길이 ***/
+.w496px {width: 496px;}
+.w288px {width: 288px;}
+
+/*** 마진(상하) ***/
+.mtb72px {margin-top: 72px; margin-bottom: 72px;}
+.mtb50px {margin-top: 50px; margin-bottom: 50px;}
+
+/*** 라인 색상 ***/
+.bgcddd {background-color: #ddd;}
+
+
+
+/******** 폰트 ********/
+@font-face {
+    font-family: 'Paperlogy-3Light';
+    src: url('../font/Paperlogy-3Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-4Regular';
+    src: url('../font/Paperlogy-4Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-5Medium';
+    src: url('../font/Paperlogy-5Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*
+h3, p {font-family: 'Paperlogy-3Light';}
+h6, h5 span, p span {font-family: 'Paperlogy-4Regular';}
+h4, h5, h6 span {font-family: 'Paperlogy-5Medium';}
+*/
+
+h3, h6, p, h5 span {font-family: 'Paperlogy-3Light';}
+h4, h5, h6 span, p span {font-family: 'Paperlogy-4Regular';}
+/*한 단계씩 격하*/
+
+h3 {font-size: 30px; line-height: 1.5; text-align: center;}
+h4 {font-size: 25px; line-height: 1; text-align: center;}
+h5 {font-size: 20px; line-height: 1; text-align: center;}
+h6 {font-size: 15px; line-height: 1.5; color: #333;}
+p {font-size: 12px; line-height: 1.2;}
+
+
+
+/******** 리셋2 ********/
+* {background-size: cover; background-position: center;} /*그냥 bgp넣어*/
+.btn_more, .btn_show {background-size: 100%; background-position: 0 0;}
+
+/******** 컬러(조말론) ********/
+.bgcjml {background-color: #fcf9ee;}
+
+
+
+/******** 페이지 ********/
+#wrap {min-width: 1280px;}
+
+/*** section(header footer 제외한 콘텐츠 영역) ***/
+section {margin-top: 60px; overflow: hidden;}
+/*of - mt60px과 직계하위 h4의 마진이 겹쳐지지 않게(.banner가 없을 때)*/
+
+/*** section 하위요소 넓이(100%는 직접 지정) ***/
+section > * {width: 1224px; margin: 0 auto;}
+
+/*** article ***/
+/*
+article - mb100px
+.pt50px - pt50px
+.topline - 상단라인, pt50px
+.underline - 하단라인, mb100px(공통사항)의 중간
+*/
+/*
+가이드
+.pdt 리스트와 .pdt 리스트 사이 간격은 충분하지만,
+리스트와 배너라던가 그런 사이 간격이 빡빡하여,
+원래라면 아티클 안에 여러 ul들을 넣었어야 맞지만,
+(ul mb, 버튼같은건 mb 음수값으로 버튼 높이값은 마진에 안 들어가게)
+ul을 개별로 아티클에 넣은 채로 상당히 작업이 진행되었기 때문에,
+간격을 벌리고 싶다면 아티클에 .mt50px, .topline을 활용하여 추가적으로 마진 50px를 주기
+*/
+article {margin-bottom: 100px; position: relative;}
+/*article에 of를 넣을거라면, mb대신 pb(언더라인 안 잘리게)*/
+article:last-child {margin-bottom: 0;}
+.pt50px, .topline {padding-top: 50px;}
+/*article.topline::after {content: ''; position: absolute; width: 600px; height: 1px; background-color: #555; left: 50%; top: -50px; transform: translateX(-50%);}*/
+article.topline::after {content: ''; position: absolute; width: 100%; height: 1px; background-color: #ddd; left: 50%; top: -50px; transform: translateX(-50%);}
+article.underline::after {content: ''; position: absolute; width: 1224px; height: 1px; background-color: #ddd; left: 50%; bottom: -50px; transform: translateX(-50%);} /*w100%도 느낌 좋은데*/
+
+/*** .cat_title(카테고리 제목) ***/
+.cat_title {width: 100%; margin-bottom: 0;}
+.banner {width: 100%; height: 288px; background-size: 1920px; background-position: center 0; background-repeat: no-repeat;}
+/*개별 css or html로 이동*/
+/*.cat_title h4 {margin: 75px auto 20px auto;}*/
+.cat_title h4 {margin: 75px auto 75px auto;} .cat_title h6 {margin-top: -55px;} /*h4가 하나만 쓰이는 경우가 생겨 위에서 아래로 조정*/
+.cat_title h6, .cat_title .line {margin-bottom: 75px; text-align: center;}
+/*.line 안 쓰일 경우를 대비하여 h6에도 mb*/
+/*72px(24px*3) > 75px(50px + 50px/2)*/
+
+/*라인(div 태그)*/
+.line {height: 1px; width: 1224px; background-color: #ddd; margin: 0 auto;}
+/*.line {height: 1px; width: 600px; background-color: #555; margin: 0 auto;}*/
+
+
+/*** .pdt(ul을 감싸는 article) ***/
+/*.pdt .line {margin: 50px auto 50px auto;}*/
+.pdt > h4 {margin-bottom: 50px;}
+.pdt > h6 {margin-top: -30px; margin-bottom: 30px; text-align: center;}
+/*h6 없을 때 h4 ~ ul 사이간격 50px*/
+
+/*article.pdt의 넓이 - 뻥li 들어가면 탭 눌렀을때 불편하므로, 단일 그리드면 아래 클래스를 활용*/
+
+
+/*2단*//*6컬럼*/
+.w600px {width: 600px;}
+
+/*3단*//*9컬럼*/
+.w912px {width: 912px;}
+
+/*2단, 3단 마진 순서*/
+.w600px ul li, .w912px ul li {margin-top: 0; margin-left: 24px;}
+.w912px ul li:nth-child(4n + 1) {margin-left: 24px;} /*어째서 캐스케이드가 .pdt li:nth보다 낮지? .600px는 잘 적용되는데 말이야.*/
+/*마진(단)*/
+.w600px ul li:nth-child(n + 3), .w912px ul li:nth-child(n + 4) {margin-top: 72px;}
+.w600px ul li:nth-child(2n + 1), .w912px ul li:nth-child(3n + 1) {margin-left: 0;}
+
+/*10컬럼, 1열, 1~3단*/
+.w1016px {width: 1016px;}
+/*몇단으로 할지 모르니까 열 만큼 ul태그를 만들고 .mtpx72클래스로 마진주기. 장단점이 있는듯. 열이 많으면 이대로 하는게 나을듯*/
+.w312px {width: 312px;} /*3컬럼+24px*/
+.w392px {width: 392px;} /*4컬럼*/
+.w704px {width: 704px;} /*7컬럼*/
+.w808px {width: 808px;} /*8컬럼*/
+
+/*100%*/
+.w100p {width: 100%;}
+
+.h288px {height: 288px;} /*.thumb의 높이*/
+.h456px {height: 456px;} /*.pdt li의 높이*/
+.h816px {height: 816px;} /*.pdt li 사진과 사진간의 높이*/
+
+/*** .pdt ul ***/
+/*다음엔 클래스를 ul에 넣자*/
+.pdt ul {overflow: hidden;}
+.pdt li {position: relative; float: left; width: 288px; height: 456px; margin-left: 24px;}
+.pdt li:nth-child(n + 5) {margin-top: 72px;}
+.pdt li:nth-child(4n + 1) {margin-left: 0;} /*(=) 4n - 3*/
+.pdt li > a:first-child {display: block; width: 288px; height: 288px; background-color: #eee;}
+.pdt li .bgcjml:first-child {background-color: #fcf9ee;} /*캐스케이딩*/
+.pdt ul img {width: 260px; height: 260px; margin: calc((288px - 260px) / 2);}
+.pdt ul p, .pdt ul h6 {margin-top: 20px; text-align: center;}
+.pdt ul p span {} /*폰트 웨이트 레귤러*/
+.pdt li > a:last-child::after {position: absolute; content: '구매하기'; font-size: 12px; line-height: 1; padding: 6px 6px; border: 1px solid #555; left: 50%; bottom: 12px; transform: translateX(-50%);}
+
+/*캐스케이드(.pdt 하위) - 다음엔 아티클 혹은 ul클래스로(아티클 하위) 하자*/
+/*관계 우선도는 동일, 작성 위치만 하위*/
+.pdt li.col2 {width: 600px;}
+.pdt li.col3 {width: 912px;}
+.pdt li.row2 {height: 984px;}
+.pdt li.span {opacity: 0; width: 0; height: 0; margin: 0;}
+.pdt li.w312px {width: 312px;}
+.pdt li.w704px {width: 704px;}
+/* .pdt li를 숨길 경우, li태그 안을 전부 지움(alt값, 하이퍼링크 때문에 무조건)*/
+/*
+리스트의 백그라운드 이미지 가이드
+html에 직접 bgz, bgp 입력
+백그라운드 사이즈를 지정하지 않는 이유 > 가로 or 세로로 긴 이미지 > 맞추는 기준이 달라짐. bgz, bgp의 기준만 지정
+.thumb(w288px+h288px)만 li 안에 div.thumb인 이유
+- 리스트의 크기가 줄어들면 배열이 깨짐
+- 정사각형 이미지를 넣겠다고 구분해주는 역할 (bgc는 bgz로 조정불가)
+- contain or cover로 쉬운 조정이 가능함. 그러면 기준 bgz 잡을때도 쉽겠지
+*/
+/*나중에 지우기(이미지를 넣겠다는 표시)*/
+.pdt div.thumb {width: 288px; height: 288px;}
+/*.pdt div.thumb, .pdt li.img, .col2, .col3, .row2, .pdt .h816px, .banner, .w312px, .w704px {background-color: #ccf;}*/
+.banner > div {height: 100%; float: left;}
+/*.bgct1 {background-color: #cfc;}*/
+/*.bgct2 {background-color: #fff;}*/
+/*.bgcfff {background-color: #fff;}*/
+/*텍스트*/
+.pdt li div.text h6 {text-align: left; margin-top: 24px; width: 70%}
+
+/*** show, more 버튼 ***/
+/*show버튼 - div태그(스크립트 구현)*/
+.btn_show {position: relative; width: 30px; height: 50px; margin: 50px auto 0 auto; background-image: url(../img/btn_show.svg); background-repeat: no-repeat; cursor: pointer;}
+.btn_show::after {position: absolute; content: 'show'; font-size: 12px; left: 50%; bottom: 0; transform: translateX(-50%);}
+
+/*** more버튼 - a태그(하이퍼링크) ***/
+.btn_more {display: block; position: relative; width: 30px; height: 50px; margin: 50px auto 0 auto; background-image: url(../img/btn_more.svg); background-repeat: no-repeat;}
+.btn_more::after {position: absolute; content: 'more'; font-size: 12px; left: 50%; bottom: 0; transform: translateX(-50%);}
+
+/*** article.box_img(박스형 이미지) ***//*스토리는 mb150px, 스토리 무조건 mb라 여기도 mb24 기본 값*/
+.box_img {width: 808px;}
+
+/*** .box_img 하위 텍스트 ***/
+.box_img > h4 {margin-bottom: 50px;}
+.box_img > h6 {margin-top: -30px; margin-bottom: 30px; text-align: center;}
+/*h6 없을 때 h4 ~ ul 사이간격 50px*/
+
+.box_img ul {overflow: hidden;}
+.box_img li {position: relative; width: 392px; height: 392px; float: left; border: 1px solid #ddd; box-sizing: border-box; margin-left: 24px; background-color: #eee; margin-bottom: 24px; box-sizing: border-box; padding: 48px 24px 24px 24px;}
+.box_img li:nth-child(2n + 1) {margin-left: 0;}
+.box_img li {opacity: 0.8;}
+.box_img li::after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1; background-color: rgb(0, 0, 0, 0.4);}
+.box_img li * {text-align: left; color: #fff;}
+.box_img li > h5:first-child {margin-bottom: 30px;}
+.box_img li > p {width: 257px; line-height: 1.5;}
+.box_img li > p a {text-decoration: underline; position: absolute;} /*posa*/
+/*.box_banner 스타일*/
+
+/*** article.box_banner(박스형 배너) ***/
+.box_banner {width: 808px; height: 392px;}
+.box_banner div {width: 392px; height: 392px; float: left; border: 1px solid #ddd; box-sizing: border-box;}
+.box_banner div:last-child {width: 416px; border-left: none; padding: 24px; padding-top: 48px;}
+/*border-box라 패딩이 안쪽으로 따임*/
+/*아티클.box에 패딩을 주어도 라인이 유지되는 설정(아티클에 of 들어가면 아티클.box에 라인줘도 됨)*/
+
+.box_banner div * {text-align: left;}
+.box_banner div > h5 {margin-bottom: 30px;} /*가장 먼저오는 요소의 mb를 하려고 하는데, 왜 안맞을까*/
+.box_banner div > p {width: 257px; line-height: 1.5; margin-bottom: 30px;} /*원래는 h6(20pt)였는데, 12pt 느낌이 더 좋음(h4-h6, h5-p). 행간만 수정*/
+.box_banner div a {text-decoration: underline;} /*이미지에도 생기나 밑줄?*/
+/*첫번째 div 이미지에도 a하이퍼링크 주는게 맞겠지만, 그럼 연결할게 너무 많아져(시간상). 바로가기 텍스트에만 고고*/
+
+
+/*** .banner_bot(하단 배너) ***/
+.banner_bot {width: 100%; height: 240px; background-color: #eee; margin-top: 100px;}
+/*banner_bot 스크립트로 연결 가능성 농후*/

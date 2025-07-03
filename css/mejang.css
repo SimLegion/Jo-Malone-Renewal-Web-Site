@@ -1,0 +1,84 @@
+.mejang_banner {
+    width: 100%;
+    height: 288px;
+    overflow: hidden;
+    position: relative;
+}
+.mejang_banner img {
+    width: 1920px;
+    position: relative;
+    top: -195px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mejang_title {
+    margin: 72px auto;
+    height: 30px;
+    font-family: 'Paperlogy-5Medium';
+    display: block;
+}
+.mejang_list {
+    width: 1224px;
+    height: 666px;
+    margin: 144px auto 0;
+    position: relative;
+}
+.mejang_list::after {
+    content: "";
+    width: 856px;
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mejang_list  > li {
+    position: relative;
+    float: left;
+    height: 18px;
+    width: 288px;
+    margin-left: 24px;
+    margin-top: 54px;
+}
+.mejang_list  > li:nth-child(1), .mejang_list  > li:nth-child(2), .mejang_list  > li:nth-child(3), .mejang_list  > li:nth-child(4) {
+    margin-top: 0;
+}
+.mejang_list  > li:nth-child(4n - 3) {
+    margin-left: 0;
+}
+.mejang_list  > li > a {
+    display: block;
+}
+.siordo {
+    font-family: 'Paperlogy-4Regular';
+    font-size: 15px;
+    position: absolute;
+    left: 104px;
+    transform: translateX(-100%);
+    float: left;
+}
+.mejang_list  > li > a >p::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    left: -10px;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+}
+.guorsi {
+    font-family: 'Paperlogy-3Light';
+    position: relative;
+    left: calc(104px + 20px);
+    top: 2px;
+    float: left;
+}
+.jumpo {
+    font-family: 'Paperlogy-3Light';
+    position: relative;
+    left: calc(104px + 40px);
+    top: 2px;
+    float: left;
+}

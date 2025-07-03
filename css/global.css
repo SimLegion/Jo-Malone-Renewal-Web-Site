@@ -1,0 +1,92 @@
+.global_banner {
+    width: 100%;
+    height: 288px;
+    overflow: hidden;
+    position: relative;
+}
+.global_banner img {
+    width: 1920px;
+    position: relative;
+    top: -105px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.global_title {
+    margin: 72px auto;
+    height: 30px;
+    font-family: 'Paperlogy-5Medium';
+    display: block;
+}
+
+.global_list {
+    width: 1224px;
+    height: 490px;
+    margin: 144px auto 0;
+    position: relative;
+}
+.global_list::after {
+    content: "";
+    width: 856px;
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.continent {
+    position: relative;
+    float: left;
+    width: 392px;
+    margin-left: 24px;
+}
+.continent:first-child {margin-left: 0;}
+.continent h5 {
+    height: 24px;
+    margin-bottom: 30px;
+}
+.continent:nth-child(4) h5 {margin-top: 36px;margin-bottom: 36px;}
+.continent > li {
+    width: 100%;
+    height: 18px;
+    margin-top: 20px;
+    position: relative;
+}
+.continent > li:nth-child(2) {margin-top: 0;}
+.nation {
+    font-family: 'Paperlogy-4Regular';
+    font-size: 15px;
+    position: absolute;
+    left: 188px;
+    transform: translateX(-100%);
+    float: left;
+}
+.continent > li > a {
+    float: left;
+    display: block;
+}
+.continent > li > a > p {
+    font-family: 'Paperlogy-3Light';
+    position: relative;
+    top: 2px;
+    float: left;
+}
+.continent > li > a > p::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    left: -10px;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+}
+.lang1 {
+    left: calc(188px + 20px);
+}
+.lang2 {
+    left: calc(188px + 40px);
+}
+.lang3 {
+    left: calc(188px + 60px);
+}

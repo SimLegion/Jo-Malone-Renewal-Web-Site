@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="_로고" data-name="로고">
+    <g id="_로그인" data-name="로그인">
+      <path class="cls-1" d="M10,8c2.21,0,4-1.79,4-4S12.21,0,10,0s-4,1.79-4,4,1.79,4,4,4ZM10,1c1.65,0,3,1.35,3,3s-1.35,3-3,3-3-1.35-3-3,1.35-3,3-3Z"/>
+      <path class="cls-1" d="M10,9C4.48,9,0,12.58,0,17v3h1v-3c0-3.86,4.04-7,9-7s9,3.14,9,7v3h1v-3c0-4.42-4.48-8-10-8Z"/>
+    </g>
+  </g>
+</svg>

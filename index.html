@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>조 말론 런던 공식 온라인 부티크</title>
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/header&footer/favicon.ico">
+    <style>
+        section {margin-top: 60px;}
+        #main_video {
+            width: 100%;
+            min-width: 1280px;
+            height: calc(100vh - 60px);
+            position: relative;
+            overflow: hidden;
+        }
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        footer#footer {margin-top: 0px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipnav" class="hidden">
+            <ul>
+                <li><a href="#header">헤더 바로가기</a></li>
+                <li><a href="#nav">네비게이션 바 바로가기</a></li>
+                <li><a href="#gnb">유틸리티 바로가기</a></li>
+                
+                <!-- section -->
+                <li><a href="#main_video">메인 영상 바로가기</a></li>
+                
+                <li><a href="#footer">푸터 바로가기</a></li>
+            </ul>
+        </div>
+        <header id="header"></header>
+        <section>
+           <div id="main_video"><video src="video/index.mp4" autoplay muted loop></video></div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+    <script src="js/headerFooter.js"></script>
+</body>
+</html>
